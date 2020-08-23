@@ -8,7 +8,7 @@ import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState) //매인화면이 만들어질때
         setContentView(R.layout.activity_main)
 
         clickMeBtn.setOnClickListener {
@@ -18,9 +18,7 @@ class MainActivity : AppCompatActivity() {
 
 //        XML에 추가한 버튼을 makeLogBtn으로 이름지어서 => 눌리면 로그남기기 버튼 눌림 로그 남겨보기
         makeLogBtn.setOnClickListener {
-
             Log.d("메인화면","로그남기기 버튼눌림")
-
         }
 
     }
